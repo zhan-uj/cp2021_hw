@@ -1,0 +1,7 @@
+git pull = git fetch + git merge
+
+Network setup for Ipv6 to backbone
+
+SSH
+
+run.html

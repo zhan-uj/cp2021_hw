@@ -1,0 +1,264 @@
+<!DOCTYPE html><html>
+        <head>
+        <title>cp2021 homework site</title>
+        <meta charset="utf-8">
+<meta property="head" content="H1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <!-- for Wink3 -->
+        <link rel="stylesheet" type="text/css" href="./../cmsimde/static/winkPlayer.css" />
+        <script type="text/javascript" src="./../cmsimde/static/winkPlayer.js"></script>
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushBash.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDiff.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPowerShell.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushRust.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container-fluid'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container-fluid">
+                <div class="row align-items-center">
+                <h1>mdecourse - 2021 Fall 計算機程式 作業網站</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">mdecourse - 2021 Fall 計算機程式 作業網站</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">Site Map</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li class='has-children'><a href='About.html'>About</a><ul class='dropdown'><li class='has-children'><a href='portable_hybrid.html'>portable_hybrid</a><ul class='dropdown'><li><a href='ANSI C.html'>ANSI C</a><li><a href='C-notes.html'>C-notes</a><li><a href='Pyslvs-UI.html'>Pyslvs-UI</a></li></ul><li><a href='GitExtensions.html'>GitExtensions</a><li><a href='run.html'>run</a><li><a href='runsrc.html'>runsrc</a><li><a href='Snake.html'>Snake</a><li><a href='SSH.html'>SSH</a><li class='has-children'><a href='Network.html'>Network</a><ul class='dropdown'><li><a href='Fossil Server.html'>Fossil Server</a></li></li></ul></ul><li class='has-children'><a href='HW1.html'>HW1</a><ul class='dropdown'><li><a href='Token.html'>Token</a><li><a href='SSH push.html'>SSH push</a></li></ul><li class='has-children'><a href='HW2.html'>HW2</a><ul class='dropdown'><li><a href='Python.html'>Python</a><li><a href='run1.html'>run1</a><li><a href='run2.html'>run2</a><li><a href='run3.html'>run3</a></li></ul><li><a href='Server.html'>Server</a><li class='has-children'><a href='HW3.html'>HW3</a><ul class='dropdown'><li><a href='Algorithms.html'>Algorithms</a><li><a href='Path Finding.html'>Path Finding</a><li><a href='ML in Brython.html'>ML in Brython</a></li></ul><li><a href='Math.html'>Math</a><li><a href='Final Project.html'>Final Project</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">SSH push << <a href='SSH push.html'>Previous</a> <a href='Python.html'>Next</a> >> Python<br /><h1>HW2</h1>
+<p>在電腦輔助設計的新電腦上可以利用 USB 隨身碟設定所謂 Hybrid 可攜程式系統, 也就是 Python 與 Portablegit 使用 c:\2021_portable_kmol\data 目錄中的檔案, 而將 start_ipv4.bat, start_ipv6.bat, data, wscite, tmp 等目錄放在 USB 隨身碟.</p>
+<p>在電腦輔助設計室中, 以 USB 隨身碟啟動的 start_ipv4.bat 檔案內容: <a href="./../downloads/start_ipv4_hybrid.txt">start_ipv4_hybrid.txt</a></p>
+<p>在動態系統中加入 run 頁面的 html 原始碼: <a href="https://mde.tw/cp2021_hw/downloads/run.txt">run.txt</a></p>
+<p>當你建立 Github 帳號後就可以利用 Gist 儲存資料或程式碼, 且可以利用 <a href="https://mde.tw/cp2021/content/run.html">https://mde.tw/cp2021/content/run.html</a> 來執行 Brython 程式.</p>
+<p>在 <a href="https://mde.tw/cp2021/content/run.html">run.html</a> 執行 Brython 程式, 可以使用下列三種方法:</p>
+<ol>
+<li>直接連線至 <a href="https://mde.tw/cp2021/content/run.html">https://mde.tw/cp2021/content/run.html</a> 將 Brython 程式寫在編輯區, 然後按下 Run.</li>
+<li>將 Brython 程式存在 Gist, 利用 run.html?src=Gist_URL, <a href="https://mde.tw/cp2021/content/run.html">run.html</a> 中的 Javascript 就會導入此 Gist 程式執行.</li>
+<li>將 Brython 程式寫在 <a href="https://mde.tw/cp2021/content/run.html">run.html</a> 頁面 html 超文件中, 然後安排其中的 Javascript 或 Brython 程式導入執行.</li>
+</ol>
+<p>建立可攜程式系統時必須了解 start_ipv4.bat 或 start_ipv6.bat 中的所有指令用法:</p>
+<p>以電腦輔助設計室中使用新電腦的 USB 可攜 Hybrid 設定 start_ipv4.bat 為例.</p>
+<pre class="brush:js;auto-links:false;toolbar:false" contenteditable="false">@echo off
+set Disk=y
+subst %Disk%: "data"
+
+set Local=C:\2021_cadlab_portable\data
+
+%Disk%:
+
+set HomePath=%Disk%:\home_ipv4
+set HomeDrive=%Disk%:\home_ipv4
+set Home=%Disk%:\home_ipv4
+set USERPROFILE=%Disk%:\home_ipv4
+
+REM 將系統 Python 程式的 io 設為 utf-8
+set PYTHONIOENCODING="utf-8"
+
+set PYTHONPATH=%Local%\Python395\DLLs;%Local%\Python395\Lib;%Local%\Python395\Lib\site-packages;
+
+set PYTHONHOME=%Local%\Python395
+
+REM 使用 putty 設定 git ssh 連線
+set GIT_SSH=%Disk%:\putty\plink.exe
+
+REM 設定跟 Python 有關的命令搜尋路徑
+set path_python=%Local%\Python395;%Local%\Python395\Scripts;
+set path_portablegit=%Local%\portablegit_2.31.1\bin;
+
+path=%Disk%:;%path_python%;%path_portablegit%;%path%;
+
+REM ref: https://drive.google.com/file/d/1S0XYN-1MKxo0KFYxs0pFTcTrr8NL4n1b/view
+
+REM REGEDIT.EXE /S %Disk%:\putty_github_com.reg;
+
+start /MIN cmd.exe
+start /MIN cmd.exe
+start /MIN cmd.exe
+start /MIN cmd.exe
+
+start /MIN %Disk%:\wScite\SciTE.exe
+start /MIN %Disk%:\wScite\SciTE.exe
+
+Exit</pre>
+<p>因為電腦 C:\ 中存放的可攜系統位於 C:\2021_cadlab_portable\data, 因此將此路徑設為 Local 變數, 然後與 Python 即 Portablegit 有關的路徑都使用 %Local% 變數設定.</p>
+<p>有關 SSH push 設定必須將 putty 系統登錄檔案匯出後, 在啟動隨身系統時載入所需設定. <a href="https://drive.google.com/file/d/1S0XYN-1MKxo0KFYxs0pFTcTrr8NL4n1b/view">putty 設定登錄檔案匯出與匯入說明影片</a>.</p>
+<p>Windows 指令:</p>
+<p style="padding-left: 30px;"><a href="https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/echo">echo off</a>, 而放在前面的 <a href="https://stackoverflow.com/questions/8486042/what-does-mean-in-windows-batch-scripts">@ 指令說明</a>.</p>
+<p style="padding-left: 30px;"><a href="https://en.wikipedia.org/wiki/List_of_DOS_commands#SET">set</a>: 設定<a href="https://ss64.com/nt/syntax-variables.html">環境變數</a>.</p>
+<p style="padding-left: 30px;">HomePath, HomeDrive, Home, USERPROFILE 都屬於 Windows 操作系統的<a href="https://ss64.com/nt/syntax-variables.html">環境變數</a>.</p>
+<p><a href="https://mde.tw/cp2021_hw/content/run.html?src=https://gist.githubusercontent.com/mdecourse/3db55f124185def5aac8e5d51579c484/raw/cc346e5ed77c63051ea69c985b191d8bd3afc1fc/red_rect1.py">HW1-1</a>: 將左右碰撞移動的紅色方塊, 改為先移動到水平畫面中心點位置後, 接著上下碰撞移動.</p>
+<p><a href="https://mde.tw/cp2021_hw/content/run.html?src=https://gist.githubusercontent.com/mdecourse/3db55f124185def5aac8e5d51579c484/raw/cc346e5ed77c63051ea69c985b191d8bd3afc1fc/red_rect2_with_start_button.py">HW1-2</a>: 加入與 <a href="https://mde.tw/cp2021/content/Cango.html">Cango 頁面</a> Fourbar 程式碼相同功能的啟動按鈕, 讓使用者可以利用按鈕啟動或中斷紅色方塊上下碰撞移動. 完成後請將程式碼存入個人 Gist 區.</p>
+<hr/>
+<p>HW2 - 可攜程式系統與個人網站佔學期成績 20%.</p>
+<p><span style="background-color: #ffff99;">HW2 必須在 2021.11.03 22:00 之前完成.</span></p>
+<p><a href="https://github.com/mdecourse/cp2021/discussions/9">HW2 具體項目成果回報區</a>將於 2021.10.25 開啟, 於 <span style="background-color: #ff99cc;">2021.11.03 22:00 關閉</span></p>
+<p>可攜程式系統與 Python 範例程式收集整理</p>
+<p>1. 請準備一個至少 64 GB 大小的 USB 3.0 以上隨身碟 (或外接 SSD), 根據 <a href="https://mde.tw/cp2021/content/Task2.html">Task2</a> 中的說明, 建立自己的可攜程式系統. </p>
+<p>2. 請登入 Github 帳號後, 連線至 <a href="https://github.com/mdecourse/cp2021_hw">https://github.com/mdecourse/cp2021_hw</a> 後, 透過 <span style="background-color: #00ff00;">Use this template</span> 按鈕建立自己的 cp2021_hw 倉儲. 並至該倉儲的 Settings -&gt; Pages -&gt; Source 將 main 分支設為 Github Pages 的 root (也就是選擇將倉儲的 main 分支設為對應網站的根目錄).</p>
+<p>3. 請將 HW1 與 HW2 的作業內容登錄至個人的 cp2021_hw 倉儲與網站中. (學習如何透過 git 指令修改倉儲中的版本內容)</p>
+<p>4. 請在個人作業網站的 HW2 區域下增設一個 H2 頁面, 將該網頁標題命名為 run, 可以如 <a href="https://mde.tw/cp2021/content/run.html">run</a> 頁面中的內容, 並且利用此頁面收集 Python 範例程式. (例如: 可自動執行的貪食蛇: <a href="https://mde.tw/cp2021/content/run.html?src=https://gist.githubusercontent.com/mdecourse/d306a1f57e53bfd6466eaae20bcb9439/raw/2160a12b9fec9707a120a383ed5d38b9b78a02cf/snake.py">https://mde.tw/cp2021/content/run.html?src=https://gist.githubusercontent.com/mdecourse/d306a1f57e53bfd6466eaae20bcb9439/raw/2160a12b9fec9707a120a383ed5d38b9b78a02cf/snake.py</a> 將 <a href="https://gist.github.com/mdecourse/d306a1f57e53bfd6466eaae20bcb9439">https://gist.github.com/mdecourse/d306a1f57e53bfd6466eaae20bcb9439</a> 作為 <a href="https://mde.tw/cp2021/content/run.html">https://mde.tw/cp2021/content/run.html</a> 頁面中 src 變數的值, 就可以在頁面中導入程式碼並執行)</p>
+<br />SSH push << <a href='SSH push.html'>Previous</a> <a href='Python.html'>Next</a> >> Python</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+    </body></html>
+        

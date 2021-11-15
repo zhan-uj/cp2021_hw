@@ -1,0 +1,42 @@
+@echo off
+set Disk=y
+subst %Disk%: "data"
+
+set Local=C:\2021_cadlab_portable\data
+
+%Disk%:
+
+set HomePath=%Disk%:\home_ipv4
+set HomeDrive=%Disk%:\home_ipv4
+set Home=%Disk%:\home_ipv4
+set USERPROFILE=%Disk%:\home_ipv4
+
+REM 將系統 Python 程式的 io 設為 utf-8
+set PYTHONIOENCODING="utf-8"
+
+set PYTHONPATH=%Local%\Python395\DLLs;%Local%\Python395\Lib;%Local%\Python395\Lib\site-packages;
+
+set PYTHONHOME=%Local%\Python395
+
+REM 使用 putty 設定 git ssh 連線
+set GIT_SSH=%Disk%:\putty\plink.exe
+
+REM 設定跟 Python 有關的命令搜尋路徑
+set path_python=%Local%\Python395;%Local%\Python395\Scripts;
+set path_portablegit=%Local%\portablegit_2.31.1\bin;
+
+path=%Disk%:;%path_python%;%path_portablegit%;%path%;
+
+REM ref: https://drive.google.com/file/d/1S0XYN-1MKxo0KFYxs0pFTcTrr8NL4n1b/view
+
+REM REGEDIT.EXE /S %Disk%:\putty_github_com.reg;
+
+start /MIN cmd.exe
+start /MIN cmd.exe
+start /MIN cmd.exe
+start /MIN cmd.exe
+
+start /MIN %Disk%:\wScite\SciTE.exe
+start /MIN %Disk%:\wScite\SciTE.exe
+
+Exit

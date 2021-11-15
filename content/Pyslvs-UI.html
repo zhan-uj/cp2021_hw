@@ -1,0 +1,214 @@
+<!DOCTYPE html><html>
+        <head>
+        <title>cp2021 homework site</title>
+        <meta charset="utf-8">
+<meta property="head" content="H3">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <!-- for Wink3 -->
+        <link rel="stylesheet" type="text/css" href="./../cmsimde/static/winkPlayer.css" />
+        <script type="text/javascript" src="./../cmsimde/static/winkPlayer.js"></script>
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushBash.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDiff.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPowerShell.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushRust.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container-fluid'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container-fluid">
+                <div class="row align-items-center">
+                <h1>mdecourse - 2021 Fall 計算機程式 作業網站</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">mdecourse - 2021 Fall 計算機程式 作業網站</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">Site Map</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li class='has-children'><a href='About.html'>About</a><ul class='dropdown'><li class='has-children'><a href='portable_hybrid.html'>portable_hybrid</a><ul class='dropdown'><li><a href='ANSI C.html'>ANSI C</a><li><a href='C-notes.html'>C-notes</a><li><a href='Pyslvs-UI.html'>Pyslvs-UI</a></li></ul><li><a href='GitExtensions.html'>GitExtensions</a><li><a href='run.html'>run</a><li><a href='runsrc.html'>runsrc</a><li><a href='Snake.html'>Snake</a><li><a href='SSH.html'>SSH</a><li class='has-children'><a href='Network.html'>Network</a><ul class='dropdown'><li><a href='Fossil Server.html'>Fossil Server</a></li></li></ul></ul><li class='has-children'><a href='HW1.html'>HW1</a><ul class='dropdown'><li><a href='Token.html'>Token</a><li><a href='SSH push.html'>SSH push</a></li></ul><li class='has-children'><a href='HW2.html'>HW2</a><ul class='dropdown'><li><a href='Python.html'>Python</a><li><a href='run1.html'>run1</a><li><a href='run2.html'>run2</a><li><a href='run3.html'>run3</a></li></ul><li><a href='Server.html'>Server</a><li class='has-children'><a href='HW3.html'>HW3</a><ul class='dropdown'><li><a href='Algorithms.html'>Algorithms</a><li><a href='Path Finding.html'>Path Finding</a><li><a href='ML in Brython.html'>ML in Brython</a></li></ul><li><a href='Math.html'>Math</a><li><a href='Final Project.html'>Final Project</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">C-notes << <a href='C-notes.html'>Previous</a> <a href='GitExtensions.html'>Next</a> >> GitExtensions<br /><h1>Pyslvs-UI</h1>
+<h4>簡介:</h4>
+<p><a href="https://github.com/KmolYuan/Pyslvs-PyQt5">Pyslvs-UI</a> 是一套利用 Python 3 與 PyQt5 建立的平面機構模擬與合成系統. 機構模擬與合成的主要核心包括 <a href="https://github.com/mdecourse/python-solvespace">Python-Solvespace</a> 幾何約束求解程式庫、<a href="https://github.com/mdecourse/pyslvs/blob/master/pyslvs/tinycadlib.pyx">tinycadlib</a> 三角幾何函式程式庫、<a href="https://github.com/mdecourse/metaheuristics">Metaheruistics</a> 演算程式庫、<a href="https://github.com/mdecourse/pyslvs/blob/master/pyslvs/bfgs.pyx">bgfs</a> 幾何約束求解程式庫、<a href="https://github.com/mdecourse/pyslvs/blob/master/pyslvs/topo_config.pyx">topologic</a> 類型合成程式庫、<a href="https://github.com/mdecourse/pyslvs/blob/80be5830a1a3ccfe3b9540f0eaad408267d26373/pyslvs/number.pyx">number</a> 數目合成程式庫等.</p>
+<p>其中, <a href="https://github.com/mdecourse/metaheuristics">Metaheruistics</a> 演算程式庫包含 Real-coded Genetic Algorithm (<a href="https://github.com/mdecourse/metaheuristics/blob/master/rga.pyx">RGA</a>)、Differential Evolution (<a href="https://github.com/mdecourse/metaheuristics/blob/master/de.pyx">DE</a>) 與 Firefly Algorithm (<a href="https://github.com/mdecourse/metaheuristics/blob/master/firefly.pyx">Firefly</a>) 等三種, 用於平面機構尺寸合成演算.</p>
+<h4>開發歷程:</h4>
+<p><a href="https://github.com/KmolYuan/Pyslvs-PyQt5">Pyslvs-UI</a> 的開發源自 2008 年, 從最基本的實數基因演算法在平面機構的應用研究起步, 期間歷經下列研究者的貢獻:</p>
+<ol>
+<li>李孟恭, 2015, <a href="https://hdl.handle.net/11296/tur9hu">Django 網際框架在平面四連桿尺寸合成系統上的應用</a></li>
+<li>李玠廷, 2013, <a href="https://hdl.handle.net/11296/mtf789">網際程式框架在平面連桿機構尺寸合成系統上的應用</a></li>
+<li>陳威任, 2013, 符號式平面滑塊機構應用研究</li>
+<li>謝政良, 2012, <a href="https://hdl.handle.net/11296/h5z5sb">網際雙自由度凸輪機構尺寸合成系統</a></li>
+<li>黃竣鉉, 2012, <a href="https://hdl.handle.net/11296/a5b4p7">網際符號輔助軸接連桿機構之基因演算法尺寸合成系統</a></li>
+<li>謝智翔, 2012, <a href="https://hdl.handle.net/11296/v9mr92">網際史都華平台機構逆運動學分析與模擬</a></li>
+<li>許哲菘, 2010, <a href="https://hdl.handle.net/11296/w66tpa">網際六軸機械臂系統的逆運動學分析與模擬</a></li>
+<li>葉岱錦, 2009, <a href="https://hdl.handle.net/11296/tt6672">基因演算法在網際機構合成系統上的應用</a></li>
+</ol>
+<p>過程中, 於 2015 年由<a href="https://github.com/kmollee">李孟恭</a>整合上述論文所開發的三種演算法, 完成 <a href="http://cython.org/">Cython</a> 格式的 <a href="https://github.com/kmollee/algorithm/blob/master/rga.pyx">RGA</a>、<a href="https://github.com/kmollee/algorithm/blob/master/de.pyx">DE</a> 與 <a href="https://github.com/kmollee/algorithm/blob/master/firefly.pyx">Firefly</a> 演算法程式庫後. 並自 2016 年起由<a href="https://github.com/KmolYuan">張元</a>將上述尺寸合成演算法, 搭配利用 <a href="http://www.swig.org/">SWIG</a> 技術, 將原本只能用於 Python 2 的 <a href="https://github.com/BBBSnowball/python-solvespace">Python-Solvespace</a> 倉儲, 改寫為能結合 PyQt5 圖形介面使用的 <a href="https://github.com/mdecourse/python-solvespace">Python-Solvespace</a> 程式庫作為另一項開端. 再搭配平面機構中的數目合成與類型合成等程式庫後, 成為目前的 <a href="https://github.com/KmolYuan/Pyslvs-PyQt5">Pyslvs-UI</a> 平面機構模擬與合成套件.</p>
+<h4>Pyslvs-UI 開發紀要</h4>
+<p>2015 年 4 月 - 由<a href="https://github.com/kmollee">李孟恭</a>以 <a href="http://cython.org/">Cython</a> 技術, 完成三個<a href="https://github.com/kmollee/algorithm">尺寸合成演算法</a>程式庫.</p>
+<p>2016 年 7 月 - 由<a href="https://github.com/KmolYuan">張元</a>完成 Python 3 格式的 <a href="https://github.com/KmolYuan/python-solvespace">Python-Solvespace</a> 程式庫.</p>
+<p>2016 年 12 月- 由<a href="https://github.com/KmolYuan">張元</a>結合 PyQt5 與演算程式庫, 完成第一代 <a href="https://github.com/KmolYuan/Pyslvs-PyQt5">Pyslvs-UI</a>套件.</p>
+<p>2019 年 7 月 - 由張元完成<a href="https://github.com/KmolYuan/pyslvs-paper-public/releases">平面多連桿機構之合成與應用</a>碩士論文.</p>
+<p></p><br />C-notes << <a href='C-notes.html'>Previous</a> <a href='GitExtensions.html'>Next</a> >> GitExtensions</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+    </body></html>
+        

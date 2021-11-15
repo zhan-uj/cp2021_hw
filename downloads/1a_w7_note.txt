@@ -1,0 +1,102 @@
+git commit 之前必須要進行身分綁定
+
+    git config --global user.name "123"
+
+    git config --global user.email "123@gm.nfu.edu.tw"
+
+    git config --global http.proxy http://account:password@[2001:288:6004:17::XX]:3128
+    
+設定使用  --global 會將 .gitconfig 存至 home_ipv4 或 home_ipv6 目錄中
+
+git add .
+
+    新增全部改版  
+
+git add run.txt
+
+    只新增 run.txt
+
+git commit -m "add run.html"
+
+提交
+
+message
+
+近端
+
+_________________________
+
+遠端
+
+git push
+
+推送
+
+token
+
+   建立 token - 字串 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
+   登入下的 settings - developer setting - personal access token
+   字串必須放在倉儲內 .git/config origin url 中
+   
+   git push origin
+   
+   github.com 為網站符號名稱 web site domain name
+   mdecourse 為 github 網站下的帳號
+   cp2021_hw 為倉儲名稱
+   
+   url = https://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@github.com/mdecourse/cp2021_hw.git
+
+ssh
+
+1) 下載 putty (Windows 的 ssh client, 可連線至 sshd, 也就是 ssh 伺服器)
+
+putty 作為 ssh client, 可連線至 github 伺服器
+
+2) 修改 start_ipv4.bat, 讓 git client 透過 putty 進行 ssh 連線
+
+REM 使用 putty 設定 git ssh 連線
+set GIT_SSH=%Disk%:\putty\plink.exe
+
+REM 代表 remark 註解
+
+3) 使用 puttygen 建立 public key 與 private key, 然後將 public key 送到 Github
+
+SSH 區. 在登入下的 settings - SSH and GPG key
+
+Openssh 格式的 key:
+
+ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAkss/SlUpaw2AiVNatINLdNlDWpYZS8i4M5S3xwS02G/2TK0ObvZG+XyVpQT+AVn4SS23o9Cn2x5ZoUeixc/9S6LZrMScP/OS7P2/naBtvoYbYlfmxpI9JyVUgKjxjKU/uAEhNsD9d2GRbHeF2jscJfX4L26WYLp9jVYG+KZcQwEAq3SkzGOCwgX8WkXco9mdbdMhWBWAOeFi/786RiCcJ6yALlSbZKZ4HDrgi5i+DOPVDP7hhppW2tCHF+rx5q4HWrHCCpR0XCeZDpaM84ZEToauVvngotXwSAw5GPwa7RDQuUA3uAPkyIBnV2uMmq6LKdW0h4ZgcO9jBIOyp6ABbw== rsa-key-20211104
+
+利用 puttygen 將 private key 存至隨身碟 Y:\home_ipv4\.ssh\tcell_private.ppk, 在設定 putty session 會指向這把 private
+key
+
+4) 利用 putty.exe 建立一個可以連線到 github SSH 伺服器的 putty session
+
+將存放 private key 的位置設給 putty session (設為 github.com) -SSH -AUTH
+
+Authentication 認證
+
+Y:\home_ipv4\.ssh\tcell_private.ppk
+
+5) 必須將要使用 SSH 的倉儲其 origin 的 url 改為採 SSH 連線
+
+格式為: url = git@github.com:mdecourse/cp2021_hw.git
+
+url = git@mysession:mdecourse/cp2021_hw.git
+
+git@github.com  代表以 git 為帳號, 採 SSH 連線到 putty 所設定的 github.com  session
+
+用 git status 查詢目前改的倉儲內容
+
+6) regedit 開啟登錄檔案設定 (registry)
+
+將 電腦\HKEY_CURRENT_USER\SOFTWARE\SimonTatham 匯出, 以便在 start_ipv4.bat 中利用下列指令將設定直接匯入.
+
+REGEDIT.EXE /S %Disk%:\putty_github_com.reg;
+
+
+
+
+
+
+

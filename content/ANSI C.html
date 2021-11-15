@@ -1,0 +1,202 @@
+<!DOCTYPE html><html>
+        <head>
+        <title>cp2021 homework site</title>
+        <meta charset="utf-8">
+<meta property="head" content="H3">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <!-- for Wink3 -->
+        <link rel="stylesheet" type="text/css" href="./../cmsimde/static/winkPlayer.css" />
+        <script type="text/javascript" src="./../cmsimde/static/winkPlayer.js"></script>
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushBash.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDiff.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPowerShell.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushRust.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container-fluid'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container-fluid">
+                <div class="row align-items-center">
+                <h1>mdecourse - 2021 Fall 計算機程式 作業網站</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">mdecourse - 2021 Fall 計算機程式 作業網站</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">Site Map</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li class='has-children'><a href='About.html'>About</a><ul class='dropdown'><li class='has-children'><a href='portable_hybrid.html'>portable_hybrid</a><ul class='dropdown'><li><a href='ANSI C.html'>ANSI C</a><li><a href='C-notes.html'>C-notes</a><li><a href='Pyslvs-UI.html'>Pyslvs-UI</a></li></ul><li><a href='GitExtensions.html'>GitExtensions</a><li><a href='run.html'>run</a><li><a href='runsrc.html'>runsrc</a><li><a href='Snake.html'>Snake</a><li><a href='SSH.html'>SSH</a><li class='has-children'><a href='Network.html'>Network</a><ul class='dropdown'><li><a href='Fossil Server.html'>Fossil Server</a></li></li></ul></ul><li class='has-children'><a href='HW1.html'>HW1</a><ul class='dropdown'><li><a href='Token.html'>Token</a><li><a href='SSH push.html'>SSH push</a></li></ul><li class='has-children'><a href='HW2.html'>HW2</a><ul class='dropdown'><li><a href='Python.html'>Python</a><li><a href='run1.html'>run1</a><li><a href='run2.html'>run2</a><li><a href='run3.html'>run3</a></li></ul><li><a href='Server.html'>Server</a><li class='has-children'><a href='HW3.html'>HW3</a><ul class='dropdown'><li><a href='Algorithms.html'>Algorithms</a><li><a href='Path Finding.html'>Path Finding</a><li><a href='ML in Brython.html'>ML in Brython</a></li></ul><li><a href='Math.html'>Math</a><li><a href='Final Project.html'>Final Project</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">portable_hybrid << <a href='portable_hybrid.html'>Previous</a> <a href='C-notes.html'>Next</a> >> C-notes<br /><h1>ANSI C</h1>
+<p><a href="https://drive.google.com/file/d/1MwUQNWATIgwWoT--HELUHcepNsNi4uTP/view?usp=sharing">portable_hybrid.7z</a> 下載檔案約 350MB, 解開壓縮檔案後約為 1GB.</p>
+<p>portable_hybrid 可攜程式系統中帶有 <a href="https://bellard.org/tcc/">Tiny C Compiler</a>, 可以用來類解譯 (pseudo interpret) <a href="https://en.wikipedia.org/wiki/ANSI_C">ANSI C</a> 程式.</p>
+<p>但是屬於 Web-based 前端的 Brython 程式, 若要與屬於伺服器後端的 <a href="https://en.wikipedia.org/wiki/ANSI_C">ANSI C</a> 程式結合, 還需要透過伺服器端的 CPython 程式出來整合 (例如: <a href="https://github.com/mdecourse/python-tinycc">https://github.com/mdecourse/python-tinycc</a>)</p>
+<h4>利用 portable_hybrid 中的 Tiny C compiler 解題:</h4>
+<p>利用 <a href="https://en.wikipedia.org/wiki/Differential_evolution">Differential Evoluation</a> (差分進化演算法), 以 <a href="https://en.wikipedia.org/wiki/ANSI_C">ANSI C</a> 程式語言編寫適應方程式的最大化或最小化演算:</p>
+<p>程式碼位於 portable_hybrid\data\tmp\c_ex\volume_ex1.c (即 <a href="https://gist.githubusercontent.com/mdecourse/b5df54ab3d5f2f079f785541d1178a66/raw/46769eea62debaf0cb849698967413806cc13ac2/volume_in_de_ex1.c">volume_in_de_ex1.c</a>), 以 <a href="https://drive.google.com/file/d/1MwUQNWATIgwWoT--HELUHcepNsNi4uTP/view?usp=sharing">portable_hybrid.7z</a> 中的 <a href="https://www.scintilla.org/SciTE.html">SciTE</a> 編輯器開啟後, 使用 Tools -&gt; Go 即可執行運算.</p>
+<p>同樣採 DE 演算法的 Python 程式範例為 portable_hybrid\data\tmp\c_ex\volume_ex1.py (即 <a href="https://gist.githubusercontent.com/mdecourse/b5df54ab3d5f2f079f785541d1178a66/raw/ccdea7b056702bcf06ed24c7407a43e0a1aacdbc/volume_in_de_ex1.py">volume_in_de_ex1.py</a>), 也可以直接以 <a href="https://drive.google.com/file/d/1MwUQNWATIgwWoT--HELUHcepNsNi4uTP/view?usp=sharing">portable_hybrid.7z</a> 中的 <a href="https://www.scintilla.org/SciTE.html">SciTE</a> 編輯器開啟後, 使用 Tools -&gt; Go 執行運算.</p>
+<p><span style="background-color: #ffff99;">此一採<a href="https://www.analyzemath.com/calculus/Problems/maximum_volume_problem.html">固定表面積的紙盒體積最大化</a>運算範例 volume_ex1.py 程式碼, 若改名為 <a href="https://gist.githubusercontent.com/mdecourse/b5df54ab3d5f2f079f785541d1178a66/raw/ccdea7b056702bcf06ed24c7407a43e0a1aacdbc/volume_in_de_ex1.py" style="background-color: #ffff99;">volume_in_de_ex1.py</a> 後, 可以直接利用 <a href="https://mde.tw/cp2021_hw/content/run.html" style="background-color: #ffff99;">https://mde.tw/cp2021_hw/content/run.html</a> 直接在網際介面中<a href="https://mde.tw/cp2021_hw/content/run.html?src=https://gist.githubusercontent.com/mdecourse/b5df54ab3d5f2f079f785541d1178a66/raw/ccdea7b056702bcf06ed24c7407a43e0a1aacdbc/volume_in_de_ex1.py" style="background-color: #ffff99;">執行</a>.</span> 此 volume_in_de_ex1.py 的原始作者為<a href="https://ndltd.ncl.edu.tw/cgi-bin/gs32/gsweb.cgi/ccd=jL6MqG/record">李孟恭</a> (<a href="https://github.com/kmollee/algorithm/blob/master/de.py">https://github.com/kmollee/algorithm/blob/master/de.py</a>)</p>
+<p>至於透過物件導向 (Object-oriented) 將 ANSI-C 與 CPython 結合的教材, 可以參考<a href="https://sites.google.com/site/misoo777/">高煥堂</a>寫的<a href="https://www.books.com.tw/products/0010813851">物件導向 ANSI-C 與 Python 的結合紙本書</a> (lw-oopc: <a href="https://sourceforge.net/projects/lwoopc/">https://sourceforge.net/projects/lwoopc/</a> 即 light-weight object-oriented programming in C, 也就是輕量物件導向 C 程式語言).</p>
+<p>從 <a href="https://github.com/Akagi201/lw_oopc/blob/master/doc/%E8%BD%BB%E9%87%8F%E7%BA%A7%E7%9A%84%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1C%E8%AF%AD%E8%A8%80%E7%BC%96%E7%A8%8B%E6%A1%86%E6%9E%B6%E4%BB%8B%E7%BB%8D.md">lw-oopc 的簡介</a> 以及<a href="https://github.com/Akagi201/lw_oopc">升級版 lw-oopc 原始碼</a>中, 則可以進一步對 ANSI-C 在嵌入式 (embedded) 系統上的應用有所了解.</p><br />portable_hybrid << <a href='portable_hybrid.html'>Previous</a> <a href='C-notes.html'>Next</a> >> C-notes</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+    </body></html>
+        

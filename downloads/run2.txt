@@ -1,0 +1,7 @@
+<h2>run2</h2>
+<p>第二種執行 Brython 程式的方法, 是將 Brython 程式存在 Gist, 利用 run.html?src=Gist_URL, <a href="https://mde.tw/cp2021/content/run.html">run.html</a> 中的 Javascript 就會導入此 Gist 程式並自動執行.</p>
+<p><a href="https://mde.tw/cp2021_hw/content/run.html?src=https://gist.githubusercontent.com/mdecourse/e896a4705a95ac8cc4147b355b0e87ef/raw/8954b8280c524c5781dc3c0b3565bc489d3aa3a3/cango_gear1.py">按下導入 cango_gear1.py 且自動執行</a></p>
+<p>上述連結為:</p>
+<pre class="brush:js;auto-links:false;toolbar:false" contenteditable="false">https://mde.tw/cp2021_hw/content/run.html?src=https://gist.githubusercontent.com/mdecourse/e896a4705a95ac8cc4147b355b0e87ef/raw/8954b8280c524c5781dc3c0b3565bc489d3aa3a3/cango_gear1.py</pre>
+<p>run.html 後的變數為 ?src=<code class="js comments">https://gist.githubusercontent.com/mdecourse/e896a4705a95ac8cc4147b355b0e87ef/raw/8954b8280c524c5781dc3c0b3565bc489d3aa3a3/cango_gear1.py</code></p>
+<p>其中的 <code class="js comments">e896a4705a95ac8cc4147b355b0e87ef</code> 為 gist 檔案群組編號, 而隨後的 <code class="js comments">8954b8280c524c5781dc3c0b3565bc489d3aa3a3</code> 則為 cango_gear1.py 的版次編號.</p>

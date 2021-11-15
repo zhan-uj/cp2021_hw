@@ -1,0 +1,84 @@
+<h2>run3</h2>
+<!-- 導入 brython 程式庫 -->
+<script src="/static/brython.js"></script>
+<script src="/static/brython_stdlib.js"></script>
+<!-- 啟動 Brython -->
+<script>// <![CDATA[
+window.onload=function(){
+brython({debug:1, pythonpath:['/static/','./../downloads/py/']});
+}
+// ]]></script>
+<script type="text/python3">// <![CDATA[
+# Spur Gear in Cango and gearUtils-09.js
+from browser import document as doc
+from browser import html
+from browser import window
+import browser.timer
+import math
+# 利用 html 建立一個 CANVAS 標註物件, 與變數 canvas 對應
+canvas = html.CANVAS(width = 600, height = 400)
+# 將 canvas 標註的 id 設為 "cango_gear"
+canvas.id = "cango_gear"
+# 將 document 中 id 為 "brython_div" 的標註
+# 設為與 brython_div 變數對應
+brython_div = doc["brython_div"]
+# 將 canvas 標註放入 brython_div 所在位置
+brython_div <= canvas
+# 將頁面中 id 為 cango_gear 的 CANVAS 設為與 canvas 對應
+canvas = doc["cango_gear"]
+# convert Javascript objects to Brython variables
+cango = window.Cango.new
+circle = window.circle.new
+shape = window.Shape.new
+path = window.Path.new
+creategeartooth = window.createGearTooth.new
+svgsegs = window.SVGsegs.new
+# 經由 Cango 轉換成 Brython 的 cango
+# 指定將圖畫在 id="cango_gear" 的 canvas 上
+cgo = cango("cango_gear")
+# 以下將要使用 gearUtils-09.js 畫出正齒輪外形
+# 假設齒數為 25
+num = 25
+# 利用 gearUtils-09 產生單一齒輪外形資料
+tooth = creategeartooth(10, num, 20)
+# 在 Cango 中, 只有 SVG 才能 rotate, appendPath 或 joinPath
+# 將齒輪外形轉為 SVG segment
+toothSVG = svgsegs(tooth)
+path1 = path(toothSVG.scale(1), {"degs": 45, "x": 100, "y": 100, "strokeColor": "#606060"})
+#print(path1)
+# SVG list
+circle = circle(50)
+#print(circle)
+circleSVG = svgsegs(circle)
+#print(circleSVG)
+# 若將 circleSVG 轉為 Cango path, 則可以用 cgo.render()
+#circlePath = path(circleSVG, {"x": 100, "y": 100, "strokeColor": "#606060"})
+#cgo.render(circlePath)
+# svgsegs 資料可以 joinPath 或 appendPath
+# joinPath 按照頭尾順序銜接
+# appendPath 則無順序銜接
+# 從 toothSVG 複製出單齒 SVG 資料
+one = toothSVG.dup()
+# 以照齒數, 逐一複製並附加在原單齒資料中
+# 第一齒的資料已經在 toothSVG 中, 因此重複迴圈從 1 開始
+for i in range(1, num):
+    newSVG = one.rotate(360*i/num)
+    toothSVG = toothSVG.appendPath(newSVG)
+# 將 SVG 轉為 path 資料
+#gear = path(toothSVG, {"x": 150, "y": 150, "strokeColor": "#606060"})
+# path 資料可以透過 cgo.render()顯示繪圖物件
+#cgo.render(gear)
+# 當 circle 接外齒使用 appendPath
+toothSVG = toothSVG.appendPath(circleSVG)
+#print(toothSVG)
+spurPath = path(toothSVG, {"x": 150, "y": 150, "strokeColor": "#606060"})
+cgo.render(spurPath)
+// ]]></script>
+<!-- Brython 程式執行的結果, 都以 brython_div 作為切入位置 -->
+<div id="brython_div"></div>
+<!-- 導入 gearUtils-0.9.js Cango 齒輪繪圖程式庫 -->
+<script src="https://mde.tw/cp2021/cmsimde/static/Cango-24v03-min.js"></script>
+<script src="https://mde.tw/cp2021/cmsimde/static/gearUtils-09.js"></script>
+<script src="https://mde.tw/cp2021/cmsimde/static/SVGpathUtils-6v03-min.js"></script>
+<script src="https://mde.tw/cp2021/cmsimde/static/sylvester.js"></script>
+<script src="https://mde.tw/cp2021/cmsimde/static/PrairieDraw.js"></script>

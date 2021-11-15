@@ -1,0 +1,222 @@
+<!DOCTYPE html><html>
+        <head>
+        <title>cp2021 homework site</title>
+        <meta charset="utf-8">
+<meta property="head" content="H1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <!-- for Wink3 -->
+        <link rel="stylesheet" type="text/css" href="./../cmsimde/static/winkPlayer.css" />
+        <script type="text/javascript" src="./../cmsimde/static/winkPlayer.js"></script>
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushBash.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDiff.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPowerShell.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushRust.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container-fluid'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container-fluid">
+                <div class="row align-items-center">
+                <h1>mdecourse - 2021 Fall 計算機程式 作業網站</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">mdecourse - 2021 Fall 計算機程式 作業網站</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">Site Map</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li class='has-children'><a href='About.html'>About</a><ul class='dropdown'><li class='has-children'><a href='portable_hybrid.html'>portable_hybrid</a><ul class='dropdown'><li><a href='ANSI C.html'>ANSI C</a><li><a href='C-notes.html'>C-notes</a><li><a href='Pyslvs-UI.html'>Pyslvs-UI</a></li></ul><li><a href='GitExtensions.html'>GitExtensions</a><li><a href='run.html'>run</a><li><a href='runsrc.html'>runsrc</a><li><a href='Snake.html'>Snake</a><li><a href='SSH.html'>SSH</a><li class='has-children'><a href='Network.html'>Network</a><ul class='dropdown'><li><a href='Fossil Server.html'>Fossil Server</a></li></li></ul></ul><li class='has-children'><a href='HW1.html'>HW1</a><ul class='dropdown'><li><a href='Token.html'>Token</a><li><a href='SSH push.html'>SSH push</a></li></ul><li class='has-children'><a href='HW2.html'>HW2</a><ul class='dropdown'><li><a href='Python.html'>Python</a><li><a href='run1.html'>run1</a><li><a href='run2.html'>run2</a><li><a href='run3.html'>run3</a></li></ul><li><a href='Server.html'>Server</a><li class='has-children'><a href='HW3.html'>HW3</a><ul class='dropdown'><li><a href='Algorithms.html'>Algorithms</a><li><a href='Path Finding.html'>Path Finding</a><li><a href='ML in Brython.html'>ML in Brython</a></li></ul><li><a href='Math.html'>Math</a><li><a href='Final Project.html'>Final Project</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content"> <a href='portable_hybrid.html'>Next</a> >> portable_hybrid<br /><h1>About</h1>
+<p>工程師在解決問題之前, 會<span style="background-color: #ffff99;">先找資料</span>, 看看這些問題是否已經有人提出解決方案, 接著再<span style="background-color: #ffff99;">分析資料</span>是否能夠用來解決自己所面臨的問題, 假如該方案適合用來解決問題, 還必須判斷能否能直接引用該方案, 有沒有適法性的問題.</p>
+<p>假如既存方案可以解決問題, 且沒有適法性問題, 接下來應該思考, 能否獨力或結合其他團隊成員, <span style="background-color: #ffff99;">打造工具</span>, 讓使用者爾後碰到相同或類似問題, 可以更方便解題.</p>
+<p>W8 配合電腦輔助設計室所建立的 <a href="https://drive.google.com/file/d/1MwUQNWATIgwWoT--HELUHcepNsNi4uTP/view?usp=sharing">portable_hybrid.7z</a> (任何人都可以下載 - 此即 academic portfolio 中的服務) 可攜程式環境系統.</p>
+<p><a href="https://drive.google.com/file/d/1MwUQNWATIgwWoT--HELUHcepNsNi4uTP/view?usp=sharing">portable_hybrid.7z</a> 下載檔案約 350MB, 解開壓縮檔案後約為 1GB.</p>
+<p style="padding-left: 30px;">註: portable_hybrid.7z 是儲存在 2021fall At mde 的 GDrive 中.</p>
+<p><span style="background-color: #ffff99;">是的, 重點在於您希望建立何種樣貌的學習歷程檔案?</span></p>
+<p>假如進入大學學習是一段 <a href="https://www.oxfordlearnersdictionaries.com/definition/english/journey_1?q=journey">Journey</a>, 您希望踏上一段什麼樣子的旅程?</p>
+<p>是讓人回味無窮? 抑或悔不當初?</p>
+<p>何謂 <a href="https://www.oxfordlearnersdictionaries.com/definition/english/academic_1?q=academic">academic</a> <a href="https://www.oxfordlearnersdictionaries.com/definition/english/portfolio">portfolio</a> (學習歷程檔案)?</p>
+<p style="padding-left: 30px;">academic 可翻譯為學術的, 而 portfolio 指的是文件檔案夾, 可以引申為資料或檔案的組合, 假如又將這些資料的創建時間納入, 也可以將 portfolio 稱為歷程檔案組合, 所以 academic portfolio 就被翻譯為學術歷程檔案, 或學習歷程檔案, 在此 <span style="background-color: #ccffcc;">academic portofolio 特稱為大學時期與學習有關的歷程檔案組合</span>.</p>
+<p style="padding-left: 30px;">academic portfolio 內容就是專業核心課程學習歷程的綜合呈現, 未來無論是求職或研究所推甄, 學習歷程檔案就是可用來評量申請者是否符合過關要求的重要指標.</p>
+<p style="padding-left: 30px;"><a href="https://www.uts.edu.au/research-and-teaching/learning-and-teaching/scholarship-and-research/scholarship-learning-and-teaching/developing-academic-portfolio">https://www.uts.edu.au/research-and-teaching/learning-and-teaching/scholarship-and-research/scholarship-learning-and-teaching/developing-academic-portfolio</a></p>
+<p style="padding-left: 60px;">A portfolio supports you in your role as an academic by creating a record of your reflection (反思), development (開發, 拓展) and achievements (成果, 成就) over time. You may like to use aspects (面向) of your portfolio to provide evidence (證據) for formal probation (試用期) review, progression (進展) or promotion (升職) processes.</p>
+<p style="padding-left: 30px;"><a href="https://www.hr.uwa.edu.au/working/academic/portfolio">https://www.hr.uwa.edu.au/working/academic/portfolio</a></p>
+<p style="padding-left: 60px;">An Academic Portfolio is a summary of your major activities and accomplishments (成果), documenting the nature and extent of your contributions (貢獻) as well as your role and achievements. It has three major components (or folios), supported by your Curriculum Vitae (CV).</p>
+<p style="padding-left: 60px;">這裡指的三項學術歷程檔案, 就是國內在評量大學老師的所謂教學 (包括教課與學習), 研究 (research) 與服務等三項工作內容的組合.</p>
+<p style="padding-left: 60px;">教學 - 課程內容有沒有與時俱進, 逐步提升內容與教學方法, 以符合時代要求.</p>
+<p style="padding-left: 60px;">研究 - 對於所開設的課程或與業界相關的研究主題, 是否持續鑽研探究.</p>
+<p style="padding-left: 60px;">服務 - 是否將教學與研究成果, 實際提供給公眾使用.</p>
+<p style="padding-left: 30px;"><a href="https://www.utu.fi/en/university/come-work-with-us/academic-portfolio">https://www.utu.fi/en/university/come-work-with-us/academic-portfolio</a></p>
+<p style="padding-left: 60px;">A good portfolio is comprehensive ((範圍)全面), brief ((內容)簡短), and concise. ((用詞)簡潔) The recommended maximum length of the academic portfolios used in filling the teaching vacancies at the University is five pages. Faculties may give more detailed information about the quality and quantity of appendixes.<br/><br/>Portfolios are created for a variety of purposes, the most important situation being recruitment (招募人才). Portfolio is also an excellent way for members of personnel to cultivate their expertise (培養專業知識), and it can also be used in development discussions and when building the work unit’s job description.</p>
+<p style="padding-left: 30px;"><a href="https://www.huronconsultinggroup.com/insights/academic-portfolio-data-collaboration-teach">https://www.huronconsultinggroup.com/insights/academic-portfolio-data-collaboration-teach</a></p>
+<p style="padding-left: 60px;">Successfully managing an academic portfolio requires continued (持續) collaboration (協同) and use of data. There are many stakeholders involved in the process and emphasizing the importance of collaboration will not only assist portfolio management, but also an institution’s mission (使命) and vision (願景). Institutional and academic leaders can align conversations about strategic activities and information management to strengthen long-range academic planning.<br/><br/>Additionally, as leaders review program-level costs and data as a part of academic portfolio management, they will be able to identify opportunities to reallocate funding to support resource-intensive academic programs. Better access to this data will also increase visibility on learning, progression and graduation outcomes. As the relationships and collaboration between academic leadership and faculty strengthen, decision making (決策), resource allocation (資源配置) and data analysis will improve.</p>
+<p>這是計算機程式課程 2021 Fall 的作業倉儲與網站 template</p>
+<hr/>
+<p>demo 學號與帳號: mdecourse</p>
+<p>網站倉儲: <a href="https://github.com/mdecourse/cp2021_hw">https://github.com/mdecourse/cp2021_hw</a></p>
+<p>網站連結: <a href="https://mde.tw/cp2021_hw">https://mde.tw/cp2021_hw</a></p>
+<p>其他與個人或作業相關資料說明或介紹:</p>
+<p>mdecourse 所屬的實驗室: <a href="https://mde.tw">https://mde.tw</a></p><br /> <a href='portable_hybrid.html'>Next</a> >> portable_hybrid</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+    </body></html>
+        
